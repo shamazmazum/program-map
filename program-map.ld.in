@@ -1,6 +1,0 @@
-PROGRAM_MAP_@PROJECT_VERSION@ {
-    global: pm_map_program;
-            pm_unmap_program;
-            pm_get_error;
-    local: *;
-};
