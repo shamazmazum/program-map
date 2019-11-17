@@ -1,6 +1,8 @@
 program-map
 ===========
 
+[![Build Status](https://travis-ci.com/shamazmazum/program-map.svg?branch=master)](https://travis-ci.com/shamazmazum/program-map)
+
 **program-map** is a simple helper library for read-only mapping of files (like OpenCL
 programs) into memory. Example of use:
 
