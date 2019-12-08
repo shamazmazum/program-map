@@ -63,7 +63,7 @@ int pm_unmap_program (struct pm_program_handler *handler)
 
 const char* pm_get_error ()
 {
-    int i;
+    size_t i;
     for (i=0; i<sizeof (error_codes)/sizeof(error_codes[0]); i++) {
         if (error_code == error_codes[i].code) return error_codes[i].message;
     }
