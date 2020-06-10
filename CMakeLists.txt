@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.0)
 cmake_policy(SET CMP0048 NEW)
 
-project (vn3d VERSION 0.1)
+project (program-map VERSION 0.2)
 
 add_library (program-map SHARED program-map.c)
 target_compile_options(program-map PRIVATE -Wall -Wextra)
