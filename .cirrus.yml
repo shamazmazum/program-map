@@ -7,11 +7,12 @@ task:
       - COMPILER: clang10
       - COMPILER: gcc9
   install_script:
-    - pkg install -y gcc9 cmake cunit
+    - pkg install -y gcc9 llvm10 cmake cunit
   config_script:
     - mkdir build && cd build
     - cmake -DCMAKE_BUILD_TYPE=RELEASE -DCMAKE_C_COMPILER=$COMPILER $CIRRUS_WORKING_DIR
   script:
+    - cd build
     - make
     - make check
     - make install
